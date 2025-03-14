@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <style>
+        /* Ensures content is left-aligned but not touching the edges */
+        .content-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: left;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,8 +40,11 @@
         <h2 class="project-tagline" style="margin: 0;">{{ site.description }}</h2>
     </header>
 
+    <!-- Main Content Wrapper to Fix Alignment -->
     <main class="wrapper">
-        {{ content }}
+        <div class="content-wrapper">
+            {{ content }}
+        </div>
     </main>
 
     <footer class="site-footer" style="text-align: center; padding: 20px; font-size: 14px;">

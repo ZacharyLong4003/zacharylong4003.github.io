@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        /* Ensures content is left-aligned but not touching the edges */
+        .content-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: left;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,8 +40,10 @@
         <h2 class="project-tagline" style="margin: 0;">Welcome to my personal website showcasing my projects.</h2>
     </header>
 
+    <!-- Main Content Wrapper to Fix Alignment -->
     <main class="wrapper">
-        <p>Hello, I am <strong>Zachary Long</strong>, a Computer Science student at the University of Minnesota - Twin Cities.</p>
+        <div class="content-wrapper">
+            <p>Hello, I am <strong>Zachary Long</strong>, a Computer Science student at the University of Minnesota - Twin Cities.</p>
 
 <h1 id="personal-projects">Personal Projects</h1>
 
@@ -49,6 +60,7 @@ The point of this project was to learn how to use the Twitter API and get more c
   <p>© Zachary Long 2025. Visit my <a href="https://github.com/ZacharyLong4003">GitHub</a>.</p>
 </footer>
 
+        </div>
     </main>
 
     <footer class="site-footer" style="text-align: center; padding: 20px; font-size: 14px;">
