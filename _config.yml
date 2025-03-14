@@ -1,0 +1,4 @@
+theme: jekyll-theme-cayman
+title: My Portfolio
+description: Welcome to my personal website showcasing my projects.
+include: ["assets"]
