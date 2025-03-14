@@ -1,8 +1,6 @@
-[Home](/) | [Resume](/resume)
-
 ---
-
-## layout: default
+layout: default
+---
 
 Hello, I am **Zachary Long**, a Computer Science student at the University of Minnesota - Twin Cities.
 
