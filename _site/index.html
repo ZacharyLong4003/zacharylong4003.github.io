@@ -2,71 +2,128 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <style>
-        /* Ensures content is left-aligned but not touching the edges */
-        .content-wrapper {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: left;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zachary Long - Portfolio</title>
+  <style>
+    .content-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: left;
+    }
+
+    .project-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .project-text {
+      flex: 1 1 55%;
+    }
+
+    .project-image {
+      flex: 1 1 40%;
+      text-align: right;
+    }
+
+    .project-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 700px) {
+      .project-section {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .project-image {
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <!-- Custom Navigation Menu Above Banner -->
-    <nav style="
+  <!-- Navigation -->
+  <nav style="
         text-align: center;
         padding: 15px;
         background: linear-gradient(120deg, #159957, #155799);
         color: white;
-    ">
-        <a href="/" style="color: white; margin-right: 15px; text-decoration: none; font-weight: bold;">Home</a>
-        <a href="/resume" style="color: white; text-decoration: none; font-weight: bold;">Resume</a>
-    </nav>
+      ">
+    <a href="/" style="color: white; margin-right: 15px; text-decoration: none; font-weight: bold;">Home</a>
+    <a href="/resume" style="color: white; text-decoration: none; font-weight: bold;">Resume</a>
+  </nav>
 
-    <!-- Cayman Theme Banner -->
-    <header class="page-header" role="banner" style="
+  <!-- Header -->
+  <header class="page-header" role="banner" style="
         background: linear-gradient(120deg, #159957, #155799);
         color: white;
         text-align: center;
         padding: 40px 20px;
-    ">
-        <h1 class="project-name" style="margin: 0;">Zachary Long</h1>
-        <h2 class="project-tagline" style="margin: 0;">Welcome to my personal website showcasing my projects.</h2>
-    </header>
+      ">
+    <h1 class="project-name" style="margin: 0;">Zachary Long</h1>
+    <h2 class="project-tagline" style="margin: 0;">Welcome to my personal website showcasing my projects.</h2>
+  </header>
 
-    <!-- Main Content Wrapper to Fix Alignment -->
-    <main class="wrapper">
-        <div class="content-wrapper">
-            <p>Hello, I am <strong>Zachary Long</strong>, a Computer Science student at the University of Minnesota - Twin Cities.</p>
+  <!-- Main Content -->
+  <main class="wrapper">
+    <div class="content-wrapper">
+      <p>Hello, I am <strong>Zachary Long</strong>, a Computer Science student at the University of Minnesota - Twin Cities.</p>
 
-<h1 id="personal-projects">Personal Projects</h1>
+      <h1 id="personal-projects">Personal Projects</h1>
 
-<h2 id="python-twitter-bot">Python Twitter Bot</h2>
-
-<p>One of my projects is a <a href="https://x.com/DonCheadleWOTDP">Twitter bot</a> written in python that tweets an image with text every 24 hours using Python Anywhere.
-The point of this project was to learn how to use the Twitter API and get more comfortable with the pillow library.</p>
-
-<p>You can check out the code and more details on my <a href="https://github.com/ZacharyLong4003/Don-Cheadle-WOTD">GitHub project page</a>.</p>
-
-<hr />
-
-<footer>
-  <p>© Zachary Long 2025. Visit my <a href="https://github.com/ZacharyLong4003">GitHub</a>.</p>
-</footer>
-
+      <!--  Start of Project Block -->
+      <div class="project-section">
+        <div class="project-text">
+          <h2>Python Twitter Bot</h2>
+          <p>
+            One of my projects is a <a href="https://x.com/DonCheadleWOTDP">Twitter bot</a> written in Python that tweets an image with text every 24 hours using PythonAnywhere.
+            The point of this project was to learn how to use the Twitter API and get more comfortable with the Pillow library.
+          </p>
+          <p>
+            You can check out the code and more details on my <a href="https://github.com/ZacharyLong4003/Don-Cheadle-WOTD">GitHub project page</a>.
+          </p>
         </div>
-    </main>
+        <div class="project-image">
+          <img src="/images/twitterbot.png" alt="Twitter Bot">
+        </div>
+      </div>
+      <!--  End of Project Block -->
 
-    <footer class="site-footer" style="text-align: center; padding: 20px; font-size: 14px;">
-        <p>© 2025 Zachary Long. Visit my <a href="https://github.com/ZacharyLong4003">GitHub</a>.
-        </p>
-    </footer>
+      <!-- project templaate -->
+      <!--
+      <div class="project-section">
+        <div class="project-text">
+          <h2>New Project Title</h2>
+          <p>Short description of the project.</p>
+          <p><a href="#">Link to code or demo</a></p>
+        </div>
+        <div class="project-image">
+          <img src="/images/your-image.jpg" alt="New Project">
+        </div>
+      </div>
+      -->
+
+      <hr />
+
+      <footer>
+        <p>© Zachary Long 2025. Visit my <a href="https://github.com/ZacharyLong4003">GitHub</a>.</p>
+      </footer>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" style="text-align: center; padding: 20px; font-size: 14px;">
+    <p>© 2025 Zachary Long. Visit my <a href="https://github.com/ZacharyLong4003">GitHub</a>.</p>
+  </footer>
 </body>
 
 </html>
