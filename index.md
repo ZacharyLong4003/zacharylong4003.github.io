@@ -8,8 +8,10 @@ Hello, I am **Zachary Long**, a Computer Science student at the University of Mi
 
 ## Python Twitter Bot
 
-One of my projects is a [Twitter bot](https://x.com/DonCheadleWOTDP) written in python that tweets an image with text every 24 hours using Python Anywhere.
-The point of this project was to learn how to use the Twitter API and get more comfortable with the pillow library.
+One of my projects is a [Twitter bot](https://x.com/DonCheadleWOTDP) written in Python that tweets an image with text every 24 hours using PythonAnywhere.  
+The point of this project was to learn how to use the Twitter API and get more comfortable with the Pillow library.
+
+![Twitter Bot Screenshot](assets/twitterbot.png)
 
 You can check out the code and more details on my [GitHub project page](https://github.com/ZacharyLong4003/Don-Cheadle-WOTD).
 
