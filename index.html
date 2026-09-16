@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zachary Long - Portfolio</title>
+  
+  <!-- Preload Open Sans font -->
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  
+  <!-- Link to compiled CSS file -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav style="
+        text-align: center;
+        padding: 15px;
+        background: linear-gradient(120deg, #159957, #155799);
+        color: white;
+      ">
+    <a href="/" style="color: white; margin-right: 15px; text-decoration: none; font-weight: bold;">Home</a>
+    <a href="/resume" style="color: white; text-decoration: none; font-weight: bold;">Resume</a>
+  </nav>
+
+  <!-- Header -->
+  <header class="page-header" role="banner" style="
+        background: linear-gradient(120deg, #159957, #155799);
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+      ">
+    <h1 class="project-name" style="margin: 0;">Zachary Long</h1>
+    <h2 class="project-tagline" style="margin: 0;">Welcome to my personal website showcasing my projects.</h2>
+  </header>
+
+  <!-- Main Content -->
+  <main class="wrapper">
+    <div class="content-wrapper">
+      <p>Hello, I am <strong>Zachary Long</strong>, a Computer Science student at the University of Minnesota - Twin Cities.</p>
+
+      <h1 id="personal-projects">Personal Projects</h1>
+
+      <!--  Start of Project Block -->
+
+      <div class="project-section">
+        <div class="project-text">
+          <h2>Engineering World Health - Alzheimer's Detection Device</h2>
+          <p>
+            As part of the programming team, I helped develop a functional software system for a low-cost, non-invasive device that aims to detect Alzheimer’s disease in its early stages. Using hyperspectral imaging of the retina, the device identifies amyloid aggregates, an early biomarker of Alzheimer’s, allowing for earlier diagnosis and more accurate tracking of disease progression.
+          </p>
+          <p>
+            <a href="https://docs.google.com/document/d/1Ln8-fDOBjOJxVKnopFiIveEJP8YiQMtx0K3kWwv7X_4/edit?usp=sharing">View project paper</a> | 
+            <a href="https://github.com/EWH-Optics/EWHSOFTWARE">View code on GitHub</a>
+          </p>
+        </div>
+        <div class="project-image">
+          <img src="assets/alzheimer-detection.png" alt="Alzheimer's Detection Device">
+        </div>
+      </div>
+
+      <div class="project-section">
+        <div class="project-text">
+          <h2>Python Twitter Bot</h2>
+          <p>
+            One of my projects is a <a href="https://x.com/DonCheadleWOTDP">Twitter bot</a> written in Python that tweets an image with text every 24 hours using GIthub Actions.
+            The point of this project was to learn how to use the Twitter API and get more comfortable with the Pillow library. This bot has been active for over two years. In that time it has evolved into a more mature piece of software moving hosting platforms and adding functionality.
+          </p>
+          <p>
+           <a href="https://github.com/ZacharyLong4003/Don-Cheadle-WOTD">View code on GitHub</a>
+          </p>
+        </div>
+        <div class="project-image">
+          <img src="assets/twitterbot.png" alt="Twitter Bot">
+        </div>
+      </div>
+
+      <div class="project-section">
+        <div class="project-text">
+          <h2>Mondo Bot</h2>
+          <p>
+            Mondo Bot is a Discord bot inspired by Discord's Trick-or-Treat bot. It runs timed challenge events where users race to respond correctly for points. Scores are tracked persistently, and the top user earns a special server role.
+          </p>
+          <p>
+            Features include timed “Back” or “Over” challenges, decreasing point value over time, double points for baited wrong answers, and a persistent leaderboard saved to a file. Users interact via simple commands like <code>m!chal</code> or <code>m!leaderboard</code>.
+          </p>
+          <p>
+            <a href="https://github.com/ZacharyLong4003/Mondo-Bot">View code on GitHub</a>
+          </p>
+        </div>
+        <div class="project-image">
+          <img src="assets/mondo-bot.png" alt="Mondo Bot">
+        </div>
+      </div>
+
+      <div class="project-section">
+        <div class="project-text">
+          <h2>Zach's Jokers (Balatro Mod)</h2>
+          <p>
+            This project was my introduction to Lua scripting and an opportunity to explore core game design principles. Using the SMODS framework for Balatro, I designed a set of custom Jokers that experiment with mechanics like probability, resource scaling, and conditional effects.
+          </p>
+          <p>
+            The goal wasn’t just to mod the game, but to understand how mechanics influence player behavior. I explored balance, risk-reward systems, and how randomness can create interesting choices without feeling unfair. Many Jokers are built around tradeoffs that force strategic thinking.
+          </p>
+          <p>
+            This was also a hands-on way to practice modular coding, iteration, and playtesting. Experimental content is included and toggleable via config for testing new ideas quickly.
+          </p>
+          <p>
+            <a href="https://github.com/ZacharyLong4003/Zachs-Balatro-Jokers">View code on GitHub</a>
+          </p>
+        </div>
+        <div class="project-image">
+          <img src="assets/balatro-jokers.png" alt="Zach's Jokers Balatro Mod">
+        </div>
+      </div>
+
+
+      <!--  End of Project Block -->
+
+      <!-- project templaate -->
+      <!--
+      <div class="project-section">
+        <div class="project-text">
+          <h2>New Project Title</h2>
+          <p>Short description of the project.</p>
+          <p><a href="#">Link to code or demo</a></p>
+        </div>
+        <div class="project-image">
+          <img src="/images/your-image.jpg" alt="New Project">
+        </div>
+      </div>
+      -->
+
+      <hr />
+
+      <footer>
+        <p>© Zachary Long 2025. Visit my <a href="https://github.com/ZacharyLong4003">GitHub</a>.</p>
+      </footer>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" style="text-align: center; padding: 20px; font-size: 14px;">
+    <p>© 2025 Zachary Long. Visit my <a href="https://github.com/ZacharyLong4003">GitHub</a>.</p>
+  </footer>
+</body>
+
+</html>
